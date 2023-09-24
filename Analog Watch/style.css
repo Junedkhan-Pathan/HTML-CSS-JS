@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  background: linear-gradient(90deg, #130c31, #40284c);
+  width: 100%;
+  height: 100%;
+}
+#clockContainer {
+  position: relative;
+  margin: auto;
+  top: 10%;
+  height: 30vw;
+  width: 30vw;
+  border-radius: 50%;
+  background: url("./public/wathdial.png");
+  background-color: #d5a2a2;
+  background-size: 100%;
+}
+#hour,
+#minute,
+#second {
+  position: absolute;
+  background-color: #130c31;
+  border-radius: 10px;
+  border-radius:100% 100% 0px 0px;
+  transform-origin: bottom;
+}
+
+#hour {
+  top: 27%;
+  left: 49.5%;
+  position: absolute;
+  height: 23%;
+  width: 1.42%;
+  background: red;
+  /* display: none; */
+}
+
+#minute {
+  top: 22%;
+  left: 49.7%;
+  position: absolute;
+  height: 28%;
+  width: 1%;
+  background: black;
+  /* display: none; */
+}
+#second {
+  top: 19%;
+  left: 49.9%;
+  position: absolute;
+  height: 31%;
+  width: 0.5%;
+  background: white;
+  /* display: none; */
+}
